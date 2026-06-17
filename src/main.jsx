@@ -8,3 +8,18 @@
 //     <App />
 //   </StrictMode>,
 // )
+
+import { createRoot } from "react-dom/client";
+
+createRoot(document.querySelector("#root")).render(
+  <div>
+    <h2>hello</h2>
+    <ul>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+      <li>hello</li>
+    </ul>
+  </div>,
+);
