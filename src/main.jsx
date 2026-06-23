@@ -10,16 +10,12 @@
 // )
 
 import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
+import "./index.css";
+import App from "./App.jsx";
 
-createRoot(document.querySelector("#root")).render(
-  <div>
-    <h2>hello</h2>
-    <ul>
-      <li>hello</li>
-      <li>hello</li>
-      <li>hello</li>
-      <li>hello</li>
-      <li>hello</li>
-    </ul>
-  </div>,
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
 );
