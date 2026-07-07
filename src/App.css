@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+
+.logo {
+  width: 55px;
+}
+
+.navli {
+  list-style: none;
+  display: flex;
+}
+
+.navli li {
+  margin-right: 10px;
+}
+
+ol {
+  list-style: decimal;
+}

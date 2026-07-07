@@ -1,19 +1,45 @@
 import "./App.css";
-import NavBar from "./components/navbar";
-import Button from "./components/button";
 
 function App() {
   return (
-    <div>
-      <NavBar />
-      <ul>
-        <li>two</li>
-        <li>one</li>
-        <li>one</li>
-        <li>one</li>
-      </ul>
-      <Button />
-    </div>
+    <>
+      <Header />
+      <MainContent />
+    </>
+  );
+}
+
+function Header() {
+  return (
+    <header className="header">
+      <img src="src/assets/react.svg" alt="rect" className="logo" />
+      <nav className="nav">
+        <ul className="navli">
+          <li>Pricing</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+function MainContent() {
+  return (
+    <main>
+      <h1>React Facts</h1>
+      <ol>
+        <li>React is Great</li>
+        <li>
+          React is Great.React is Great.React is Great.React is Great.React is
+          Great.
+        </li>
+        <li>
+          I Love React beacuse React is Great.React is Great.React is
+          Great.React is Great.React is Great.
+        </li>
+        <li>Dope</li>
+      </ol>
+    </main>
   );
 }
 
