@@ -51,3 +51,8 @@
   font-family: var(--sans);
   padding-bottom: 4px;
 }
+
+.fact::marker {
+  color: var(--accent);
+  font-size: 1.4rem;
+}
