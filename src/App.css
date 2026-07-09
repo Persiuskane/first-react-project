@@ -1,24 +1,53 @@
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  margin: 8px;
+  padding: 8px;
+  background-color: var(--accent-bg);
 }
 
 .logo {
   width: 55px;
+  margin-right: 4px;
 }
 
-.navli {
-  list-style: none;
+.logoText {
+  font-family: var(--mono);
+  font-size: 2em;
+  color: var(--accent);
+  margin-left: 4px;
+}
+
+.bgLogo {
+  position: fixed;
+  top: 20vh;
+  right: 0;
+  z-index: -1;
+}
+
+.bgLogoImg {
+  height: 60vh;
+  filter: brightness(0) saturate(100%) invert(29%) sepia(4%) saturate(1050%)
+    hue-rotate(177deg) brightness(99%) contrast(83%);
+}
+
+.content {
   display: flex;
+  flex-direction: column;
+  padding: 64px 16px 8px 64px;
 }
 
-.navli li {
-  margin-right: 10px;
+.heading {
+  font-family: var(--heading);
+  padding-bottom: 16px;
 }
 
-ol {
-  list-style: decimal;
+.factList {
+  list-style: disc;
+  color: var(--text);
+}
+
+.fact {
+  font-family: var(--sans);
+  padding-bottom: 4px;
 }
